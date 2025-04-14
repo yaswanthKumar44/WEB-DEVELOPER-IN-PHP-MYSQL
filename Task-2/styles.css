@@ -1,0 +1,229 @@
+/* ========== General Styles ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Header & Navigation ========== */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* ========== Forms ========== */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+    border-color: #2980b9;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background: #35424a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #2980b9;
+}
+
+/* ========== Dashboard / Posts List ========== */
+.post {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post h3 {
+    font-size: 1.8rem;
+    color: #35424a;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.post h3:hover {
+    color: #2980b9;
+}
+
+.post p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.post small {
+    color: #7f8c8d;
+}
+
+/* ========== Buttons for Actions ========== */
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: background 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background: #1abc9c;
+}
+
+.btn-danger {
+    background: #e74c3c;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+/* ========== Alerts & Messages ========== */
+.alert {
+    padding: 15px;
+    background: #f2dede;
+    color: #a94442;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* ========== Footer ========== */
+footer {
+    background: #35424a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+/* ========== Utility Classes ========== */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ========== Transitions ========== */
+a, button, input, textarea {
+    transition: all 0.3s ease;
+}
